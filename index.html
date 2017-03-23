@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/script.js" async></script>
+        <link rel="stylesheet" href="css/rwd.css">
+        <link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
+        <script src="responsive-nav.js-master/responsive-nav.min.js"></script>
+        <title>New Document</title>
+    </head>
+    <body>
+        <div>
+            <p>
+                Rente
+            </p>
+            <div class="boxdiv rente">
+                <div>
+                    <div>
+                        <p>Slutkapital</p>
+                        <input id="rente1" onchange="rente()">
+                    </div>
+                    <div>
+                        <p>Startkapital</p>
+                        <input id="rente2" onchange="rente()">
+                    </div>
+                    <div>
+                        <p>Rente</p>
+                        <input id="rente3" onchange="rente()">
+                    </div>
+                    <div>
+                        <p>Terminer</p>
+                        <input id="rente4" onchange="rente()">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <p>Slukapital:</p>
+                    <p>Startkapital</p>
+                    <p>Rente</p>
+                    <p>Terminer</p>
+                </div>
+                <div class="colons">
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                </div>
+                <div class="resultbox">
+                    <p id="renteResult1"></p>
+                    <p id="renteResult2"></p>
+                    <p id="renteResult3"></p>
+                    <p id="renteResult4"></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                Kombinatorik
+            </p>
+            <div class="boxdiv kombinato">
+                <div>
+                    <div>
+                        <p>Antal stuff</p>
+                        <input id="boxKombinatorik1" onchange="kombinatorik()">
+                    </div>
+                    <div>
+                        <p>Og du skal bruge</p>
+                        <input id="boxKombinatorik2" onchange="kombinatorik()">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div>
+                    <p>Ordnet uden tilbagelægning</p>
+                    <p>Ordnet med tilbagelægning</p>
+                    <p>Uordnet uden tilbagelægning</p>
+                    <p>Uordnet med tilbagelægning</p>
+                </div>
+                <div class="colons">
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                    <p>:</p>
+                </div>
+                <div class="resultbox">
+                    <p id="kombinatorikResult1"></p>
+                    <p id="kombinatorikResult2"></p>
+                    <p id="kombinatorikResult3"></p>
+                    <p id="kombinatorikResult4"></p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        <script>
+            var nav = responsiveNav(".nav-collapse",{
+            label:"Menu",
+            transition: 284,
+            });
+        </script>
+    </body>
+</html>
